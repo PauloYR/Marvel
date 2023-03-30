@@ -15,6 +15,10 @@ object AppDependencies {
     val compose_manifest = "androidx.compose.ui:ui-test-manifest:${Versions.compose_ui_version}"
     val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
     val hilt_compile = "com.google.dagger:hilt-android-compiler:${Versions.hilt}"
+    val ktor_client = "io.ktor:ktor-client-android:${Versions.ktor}"
+    val ktor_serialization = "io.ktor:ktor-client-serialization:${Versions.ktor}"
+    val kotlinx_serialization_json = "org.jetbrains.kotlinx:kotlinx-serialization-json:${Versions.kotlinx_serialization_json}"
+    val ktor_logging = "io.ktor:ktor-client-logging-jvm:${Versions.ktor}"
 
     val appLibraries  = arrayListOf<String>().apply {
         add(android_core)
@@ -24,6 +28,10 @@ object AppDependencies {
         add(compose_ui_preview)
         add(material)
         add(hilt)
+        add(ktor_client)
+        add(ktor_serialization)
+        add(kotlinx_serialization_json)
+        add(ktor_logging)
     }
 
     val annotationLibaries = arrayListOf<String>().apply {
