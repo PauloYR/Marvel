@@ -42,7 +42,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion ="1.2.0"
+        kotlinCompilerExtensionVersion = Versions.compose_ui_version
     }
     packagingOptions {
         resources {
@@ -52,19 +52,9 @@ android {
 }
 
 dependencies {
-    implementation(AppDependencies.android_core)
-    implementation(AppDependencies.lifecycle)
-    implementation(AppDependencies.activity)
-    implementation(AppDependencies.compose_ui)
-    implementation(AppDependencies.compose_ui_preview)
-    implementation(AppDependencies.material)
-    implementation("com.google.dagger:hilt-android:${Versions.hilt}")
-    kapt("com.google.dagger:hilt-android-compiler:${Versions.hilt}")
-//    kapt("androidx.hilt:hilt-compiler:${Versions.hilt}")
-    testImplementation(AppDependencies.junit)
-    androidTestImplementation(AppDependencies.android_junit)
-    androidTestImplementation(AppDependencies.expresso)
-    androidTestImplementation(AppDependencies.compose_junit)
-    debugImplementation(AppDependencies.compose_tooling)
-    debugImplementation(AppDependencies.compose_manifest)
+    implementation(AppDependencies.appLibraries)
+    testImplementation(AppDependencies.testLibraries)
+    kapt(AppDependencies.annotationLibaries)
+    debugImplementation(AppDependencies.debugLibaries)
+    androidTestImplementation(AppDependencies.androidTestLibraries)
 }
