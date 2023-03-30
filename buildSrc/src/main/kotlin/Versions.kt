@@ -9,6 +9,9 @@ object Versions {
 
     val hilt = "2.42"
 
+    val ktor = "1.5.0"
+    val kotlinx_serialization_json = "1.0.1"
+
     val junit = "4.13.2"
     val android_junit = ""
     val expresso = "3.4.0"
