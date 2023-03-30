@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -56,6 +58,9 @@ dependencies {
     implementation(AppDependencies.compose_ui)
     implementation(AppDependencies.compose_ui_preview)
     implementation(AppDependencies.material)
+    implementation("com.google.dagger:hilt-android:${Versions.hilt}")
+    kapt("com.google.dagger:hilt-android-compiler:${Versions.hilt}")
+//    kapt("androidx.hilt:hilt-compiler:${Versions.hilt}")
     testImplementation(AppDependencies.junit)
     androidTestImplementation(AppDependencies.android_junit)
     androidTestImplementation(AppDependencies.expresso)
