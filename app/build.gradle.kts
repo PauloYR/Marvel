@@ -50,16 +50,16 @@ android {
 }
 
 dependencies {
-    implementation("androidx.core:core-ktx:${Versions.android_core}")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle_runtime_ktx}")
-    implementation("androidx.activity:activity-compose:${Versions.activity_compose}")
-    implementation("androidx.compose.ui:ui:${Versions.compose_ui_version}")
-    implementation("androidx.compose.ui:ui-tooling-preview:${Versions.compose_ui_version}")
-    implementation("androidx.compose.material:material:${Versions.material}")
-    testImplementation("junit:junit:${Versions.junit}")
-    androidTestImplementation("androidx.test.ext:junit:${Versions.android_junit}")
-    androidTestImplementation("androidx.test.espresso:espresso-core:${Versions.expresso}")
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4:${Versions.compose_ui_version}")
-    debugImplementation("androidx.compose.ui:ui-tooling:${Versions.compose_ui_version}")
-    debugImplementation("androidx.compose.ui:ui-test-manifest:${Versions.compose_ui_version}")
+    implementation(AppDependencies.android_core)
+    implementation(AppDependencies.lifecycle)
+    implementation(AppDependencies.activity)
+    implementation(AppDependencies.compose_ui)
+    implementation(AppDependencies.compose_ui_preview)
+    implementation(AppDependencies.material)
+    testImplementation(AppDependencies.junit)
+    androidTestImplementation(AppDependencies.android_junit)
+    androidTestImplementation(AppDependencies.expresso)
+    androidTestImplementation(AppDependencies.compose_junit)
+    debugImplementation(AppDependencies.compose_tooling)
+    debugImplementation(AppDependencies.compose_manifest)
 }
