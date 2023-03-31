@@ -28,6 +28,9 @@ object AppDependencies {
         add(compose_ui_preview)
         add(material)
         add(hilt)
+    }
+
+    val networkLibaries = arrayListOf<String>().apply {
         add(ktor_client)
         add(ktor_serialization)
         add(kotlinx_serialization_json)
