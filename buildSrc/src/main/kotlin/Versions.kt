@@ -13,7 +13,7 @@ object Versions {
     val kotlinx_serialization_json = "1.0.1"
 
     val junit = "4.13.2"
-    val android_junit = ""
+    val android_junit = "1.1.3"
     val expresso = "3.4.0"
 
 }
