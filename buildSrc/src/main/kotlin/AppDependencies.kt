@@ -19,6 +19,7 @@ object AppDependencies {
     val ktor_serialization = "io.ktor:ktor-client-serialization:${Versions.ktor}"
     val kotlinx_serialization_json = "org.jetbrains.kotlinx:kotlinx-serialization-json:${Versions.kotlinx_serialization_json}"
     val ktor_logging = "io.ktor:ktor-client-logging-jvm:${Versions.ktor}"
+    val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.courotines}"
 
     val appLibraries  = arrayListOf<String>().apply {
         add(android_core)
@@ -32,6 +33,7 @@ object AppDependencies {
         add(ktor_serialization)
         add(kotlinx_serialization_json)
         add(ktor_logging)
+        add(coroutines)
     }
 
     val annotationLibaries = arrayListOf<String>().apply {

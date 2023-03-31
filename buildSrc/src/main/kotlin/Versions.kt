@@ -9,6 +9,8 @@ object Versions {
 
     val hilt = "2.42"
 
+    val courotines = "1.3.9"
+
     val ktor = "1.5.0"
     val kotlinx_serialization_json = "1.0.1"
 
